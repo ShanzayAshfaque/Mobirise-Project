@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+::-webkit-scrollbar{
+  background: rgba(77, 200, 248, 0.9);
+
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: black;
+  border-radius: 2px;
+}
+body{
+  font-family: 'Poppins';
+}
+a{
+  text-decoration: none;
+}
+nav {
+  position:unset;
+    height: 100px;
+    width: 100%;
+    background: #333;
+}
+label.logo{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0px 100px;
+    line-height: 100px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav ul sup{
+  display:inline-block;
+  font-size: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    line-height: 100px;
+}
+nav ul li a{
+    color: #d3d3d3;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    color: white;
+    transition: .5s;
+}
+nav #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 100px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        /* padding-left: 60px; */
+        padding-left: 18px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size:  16px;
+    }
+
+}
+@media(max-width:909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        /* position: relative; */
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        top: 80px;
+        /* left: 0; */
+        left: -100%;
+        transition: all .5s ;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        width: 100%;
+    }
+    nav a{
+        font-size: 25px;
+    }
+    a.active, a:hover{
+        color:white;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+/* main banner styling  */
+
+main{
+    position:absolute;
+    background-image: url(/img/bbbb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+  }
+  main .banner{
+    background-color: #000000e0;
+    /* opacity: ; */
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  main .banner .banner-heading{
+    color: #eee;
+    margin-top: 5rem;
+  }
+  main .banner span{
+    font-size: 1.1rem;
+  }
+  main .banner h1{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  main .banner p{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  main .banner button{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+  }
+  main .banner button a{
+    color: #000;
+  }
+  main .img-box{
+    margin-top: 5rem;
+  }
+
+  /* ------ main cloud section styling  -----------  */
+
+
+  main .cloud-section{
+    margin-top: 3.5rem;
+    padding: 2rem;
+  }
+  main .cloud-section sup{
+    color: #fff;
+    top: 0;
+  }
+  main .cloud-section h2{
+    color: white;
+    font-size: 3rem;
+  }
+  main .cloud-section p{
+    color: #ddddddb0;
+    font-size: 0.9rem;
+  }
+  main .cloud-section button{
+    display: inline-block;
+    color: #000;
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+    margin-top: 0;
+}
+
+/* ------- services section styling ---------  */
+
+
+main .banner .services h1{
+  font-size: 2.4rem;
+}
+main .banner .services p{
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ddddddb0;
+  margin-top: 1rem;
+}
+main .banner .services sup{
+  color: #ddddddb0;
+  font-size: 1rem;
+  content: "";
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  display: block;
+  height: 15px;
+}
+main .banner .services h4{
+  margin: 1rem 0;
+}
+main .banner i{
+  font-size: 1.5rem;
+}
+main .banner .carousel-item{
+  padding:  0rem 6rem;
+}
+main .banner .carousel-item .item img{
+  height: 700px;
+}
+main .banner .carousel-item .item span{
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main .banner .carousel-item .item h2{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: -webkit-left;
+}
+main .banner .carousel-item .item p{
+  text-align: -webkit-left;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+
+/* -------- about section styling --------  */
+#about .our-services{
+  margin: 6rem 0;
+}
+#about i{
+  font-size: 5.5rem;
+}
+#about .about-btn{
+  padding: 0;
+  background: transparent;
+  margin: 0;
+}
+#about p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+#about h3{
+  margin: 1rem 0;
+}
+#about .about-btn a{
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 0;
+}
+#about .responsive,
+#about .creative{
+  margin-top: 5rem;
+}
+
+#about .cards span{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+#about .cards h2{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+main .banner .cards h4{
+  margin: 1rem 0rem
+}
+
+/* ------ preferences-section styling --------  */
+.preferences-section {
+  margin: 5rem 0 ;  
+}
+
+.preferences-section h2{
+  font-size: 3rem;
+}
+.preferences-section .box h4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+.preferences-section .box p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* review section styling */
+main .review {
+  margin: 5rem 0;
+  border: 2px solid #fff;
+  padding: 4rem 1rem;
+}
+main .review img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+main .review i{
+  font-size: 2rem;
+}
+main .review span{
+  font-size: 2rem;
+  padding-right: 0.4rem;
+}
+main .review p{
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+main .review .name{
+  padding: 0 1rem;
+}
+@media only screen and (max-width:991px){
+    main .banner .img-box{
+    display: flex;
+    justify-content: center;
+  }
+  main .banner .banner-heading{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  main .banner-heading p {
+    font-size: 15px;
+    padding: 1rem 6rem;
+}
+main .cloud-section{
+  margin-top: 0rem;
+  padding: 1rem 3rem;
+}
+
+main .banner .carousel-item{
+  padding-left: 3rem;
+}
+main .banner .carousel-item .item h2{
+  font-size: 2.5rem;
+}
+main .banner .carousel-item .item p{
+  display: none;
+}
+main .banner .carousel-item .item img{
+  height: 500px;
+}
+main .banner .carousel-item .item button{
+  display: none;
+}
+/* ---- about section  */
+
+#about p{
+  font-size: 12px;
+}
+#about .about-btn a {
+  font-size: 10px;
+}
+#about .global,
+#about .responsive,
+#about .friendly,
+#about .creative{
+  padding: 1rem 2rem;
+}
+
+#about .cards span{
+  font-size: 10px;
+}
+#about .cards h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .banner .cards h4{
+  font-size: 1rem;
+}
+.preferences-section h2{
+  font-size: 2.3rem;
+}
+.preferences-section .box h4{
+  font-size: 0.9rem;
+}
+.preferences-section .box p{
+  font-size: 10px;
+}
+}
+@media only screen and (max-width: 768px){
+  main .cloud-section {
+    margin-top: 0rem;
+    padding: 0rem;
+}
+  main .cloud-section h2{
+    font-size: 2rem;
+  }
+  main .cloud-section p{
+    color: #ddddddb0;
+    font-size: 0.7rem;
+  }
+  
+main .banner .carousel-item{
+  padding: 0rem 3.3rem;
+  text-align: center;
+}
+main .banner .carousel-item .item span{
+  display: none;
+}
+main .banner .carousel-item .item h2{
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+main .banner .carousel-item .item p{
+  display: none;
+}
+main .banner .carousel-item .item img{
+  height: 550px;
+  width: 100%;
+}
+
+}
+@media only screen and (max-width:576px){
+  main .banner h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+  }
+  main .img-box {
+    margin-top: 0rem;
+}
+  main .banner-heading p {
+    font-size: 12px;
+    padding: 0.6rem 0rem;
+}
+main .banner button {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem;
+}
+main .cloud-section {
+  margin-top: 0rem;
+  padding: 1rem;
+}
+main .cloud-section h2{
+  font-size: 1.2rem;
+}
+main .cloud-section p{
+  text-align: justify;
+  font-size: 0.5rem;
+}
+main .cloud-section button{
+  font-weight: 300;
+  font-size: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  margin-top: 0rem;
+}
+main .banner .services h1{
+  font-size: 1.5rem;
+}
+main .banner .carousel-item{
+  padding: 0;
+}
+main .banner .carousel-item .item h2{
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+main .banner .carousel-item .item p{
+  display: none;
+}
+main .banner .carousel-item .item img{
+  height: auto;
+}
+main .banner .carousel i  {
+  display: none;
+}
+#about .global,
+#about .responsive,
+#about .friendly,
+#about .creative{
+  text-align: center;
+}
+#about .responsive,
+#about .creative{
+  margin-top: 0;
+}
+#about .cards span{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+#about .cards h2{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+main .banner .cards h4 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.preferences-section{
+  text-align: center;
+}
+.preferences-section h2{
+  font-size: 1.5rem;
+}
+.preferences-section img{
+  width: 300px;
+  height: auto;
+}
+main .review span{
+  font-size: 1.2rem;
+}
+main.review i{
+  font-size: 1.2rem;
+}
+main .review p{
+  font-size: 12px;
+}
+main .review .name{
+  font-size: 12px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
